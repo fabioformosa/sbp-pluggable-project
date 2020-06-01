@@ -1,0 +1,11 @@
+server:
+  port : 8081
+spring:
+  thymeleaf.cache: false
+  main.show-banner: false
+logging:
+  level:
+    org.springframework: WARN
+    org.hibernate: WARN
+    org.apache: INFO
+    ROOT: debug
