@@ -1,17 +1,19 @@
-package it.fabioformosa.lab.sbm.mainapp.controllers;
+package it.fabioformosa.lab.sbm.plugin.controllers;
 
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class HelloController {
+@RequestMapping("/sample-plugin")
+public class WhoamiSamplePluginController {
 
   //  @Autowired
   //  NamedParameterJdbcTemplate jdbcTemplate;
 
-  @RequestMapping("/")
+  @GetMapping("/whoami")
   String hello() {
-    return "Hello World, I'm the main app!";
+    return "Hello World, I'm a sample plugin!";
   }
 
   //    @Data

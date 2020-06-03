@@ -7,7 +7,7 @@ spring:
     classes-directories: "target/classes, target/resources"
 logging:
   level:
-    org.springframework: WARN
+    org.springframework: DEBUG
     org.hibernate: WARN
     org.apache: INFO
     ROOT: debug

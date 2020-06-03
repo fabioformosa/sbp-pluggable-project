@@ -13,7 +13,7 @@ import it.fabio.formosa.lab.sbp.extensions.Greetings;
 
 @RestController
 @RequestMapping(value = "/greetings")
-public class PluginController {
+public class GreetingsController {
 
   @Autowired(required = false)
   private PluginManager pluginManager;
@@ -22,8 +22,8 @@ public class PluginController {
 
   @GetMapping()
   public List<String> listExtensions() {
-    List<Greetings> greetings = pluginManager.getExtensions(Greetings.class);
-    return greetings.stream().map(Greetings::sayHello).collect(Collectors.toList());
+    List<Greetings> greetingsInAllLanguages = pluginManager.getExtensions(Greetings.class);
+    return greetingsInAllLanguages.stream().map(Greetings::sayHello).collect(Collectors.toList());
   }
 
 }
