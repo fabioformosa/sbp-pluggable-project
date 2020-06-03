@@ -24,7 +24,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
         <lombok.version>1.14.8</lombok.version>
-        <sbp.version>0.1.4</sbp.version>
+        <sbp.version>0.1.5</sbp.version>
     </properties>
   
   <dependencyManagement>

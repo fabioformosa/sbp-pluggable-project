@@ -2,7 +2,7 @@ spring:
   thymeleaf.cache: false
   sbp:
     enabled: true
-    runtimeMode: development
+    runtime-mode: development
     pluginsRoot: ../plugins
     classes-directories: "target/classes, target/resources"
 logging:
