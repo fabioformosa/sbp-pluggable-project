@@ -41,18 +41,6 @@ public class SpringBootExecutableJarPluginLoader extends JarPluginLoader impleme
             pluginClassLoader.addURL(nestedJarFile.getUrl());
         }
 
-        //    executableSpringJarFile.stream().forEach(j -> log.info("SpringBootExecutableJarPluginLoader - found nested jar {}", j.getName()));
-
-        //    executableSpringJarFile.stream().forEach(j -> {
-        //      try {
-        //        JarFile nestedJarFile = executableSpringJarFile.getNestedJarFile(j);
-        //        log.debug("SpringBootExecutableJarPluginLoader - Loading nested jar {}", nestedJarFile.getName());
-        //        pluginClassLoader.addURL(nestedJarFile.getUrl());
-        //      } catch (IOException e) {
-        //        log.error("SpringBootExecutableJarPluginLoader - Error loading nested jar {} due to {}", j.getName(), e.getMessage(), e);
-        //      }
-        //    });
-
         return pluginClassLoader;
     }
 
