@@ -19,6 +19,12 @@
     <dependency>
       <groupId>org.laxture</groupId>
       <artifactId>sbp-spring-boot-starter</artifactId>
+      <exclusions>
+            <exclusion>
+              <groupId>org.projectlombok</groupId>
+              <artifactId>lombok</artifactId>
+            </exclusion>
+          </exclusions>
     </dependency>
     
     <dependency>

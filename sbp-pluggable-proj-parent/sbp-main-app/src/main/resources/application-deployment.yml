@@ -1,0 +1,11 @@
+spring:
+  sbp:
+    enabled: true
+    runtime-mode: deployment
+    pluginsRoot: plugins
+logging:
+  level:
+    org.springframework: WARN
+    org.hibernate: WARN
+    org.apache: INFO
+    ROOT: debug

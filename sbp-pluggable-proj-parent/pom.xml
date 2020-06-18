@@ -16,7 +16,7 @@
   
   <modules>
     <module>sbp-main-app</module>
-    <module>sbp-sample-plugin</module>
+    <module>plugins/sbp-sample-plugin</module>
     <module>sbp-plugin-spi</module>
   </modules>
   
