@@ -3,6 +3,8 @@ spring:
     enabled: true
     runtime-mode: deployment
     pluginsRoot: plugins
+    custom-plugin-loaders:
+      - it.fabioformosa.lab.sbm.mainapp.SpringBootExecutableJarPluginLoader
 logging:
   level:
     org.springframework: WARN

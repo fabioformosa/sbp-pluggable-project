@@ -1,16 +1,14 @@
 package it.fabioformosa.lab.sbm.mainapp;
 
-import org.laxture.sbp.SpringBootPluginManager;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class AppConfig {
 
-    @Bean
-    public SpringBootPluginManager pluginManager() {
-        return new CustomPluginManager();
-    }
+    //    @Bean
+    //    public SpringBootPluginManager pluginManager() {
+    //        return new CustomPluginManager();
+    //    }
 
     //  @Autowired
     //  DataSourceProperties dataSourceProperties;

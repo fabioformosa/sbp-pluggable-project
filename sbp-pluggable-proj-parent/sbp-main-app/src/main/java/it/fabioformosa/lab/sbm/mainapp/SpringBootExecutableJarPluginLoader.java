@@ -1,10 +1,10 @@
 package it.fabioformosa.lab.sbm.mainapp;
 
+import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Iterator;
 import java.util.jar.JarEntry;
 
-import org.pf4j.JarPluginLoader;
 import org.pf4j.PluginClassLoader;
 import org.pf4j.PluginDescriptor;
 import org.pf4j.PluginLoader;
@@ -15,10 +15,17 @@ import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
-public class SpringBootExecutableJarPluginLoader extends JarPluginLoader implements PluginLoader {
+public class SpringBootExecutableJarPluginLoader implements PluginLoader {
+
+    private PluginManager pluginManager;
 
     public SpringBootExecutableJarPluginLoader(PluginManager pluginManager) {
-        super(pluginManager);
+        this.pluginManager = pluginManager;
+    }
+
+    @Override
+    public boolean isApplicable(Path pluginPath) {
+        return Files.exists(pluginPath) && Files.isRegularFile(pluginPath) && pluginPath.toString().toLowerCase().endsWith(".sjar");
     }
 
     @SneakyThrows
