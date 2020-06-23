@@ -10,7 +10,7 @@
       <artifactId>sbp-pluggable-proj-parent</artifactId>
       <version>0.0.1-SNAPSHOT</version>
     </parent>
-    
+
     <repositories>
       <repository>
           <id>jitpack.io</id>
@@ -21,7 +21,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <start-class>it.fabioformosa.lab.sbm.plugin.App</start-class>
-        <java.version>1.8</java.version>
+        <java.version>11</java.version>
         <rest.assured.version>2.3.3</rest.assured.version>
     </properties>
 
@@ -38,23 +38,23 @@
 <!--             <groupId>org.springframework.boot</groupId> -->
 <!--             <artifactId>spring-boot-starter-jdbc</artifactId> -->
 <!--         </dependency> -->
-        
+
         <dependency>
           <groupId>org.laxture</groupId>
           <artifactId>sbp-spring-boot-starter</artifactId>
         </dependency>
-        
+
         <dependency>
           <groupId>org.projectlombok</groupId>
           <artifactId>lombok</artifactId>
           <scope>provided</scope>
         </dependency>
-        
+
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
         </dependency>
-        
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
